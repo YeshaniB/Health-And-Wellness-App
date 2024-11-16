@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="border">#EB6E6E</color>
+    <color name="button">#07186B</color>
+    <color name="background_color">#D5F8F8</color>
+    <color name="red">#E42626</color>
+    <color name="launch_bg">#1C1C38</color>
+    <color name="timer_bg">#30d9ef</color>
+    <color name="timer_bg2">#20737E</color>
+
+
+</resources>

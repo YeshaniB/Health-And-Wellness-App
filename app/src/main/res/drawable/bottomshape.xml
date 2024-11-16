@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="ExtraText"
+
+    android:shape="rectangle">
+    <solid android:color="@color/border"/>
+
+    <size android:height="150dp"/>
+    <size android:width="730dp"/>
+    <corners android:topRightRadius="200dp"
+        android:bottomRightRadius="200dp"
+        android:topLeftRadius="0dp"
+        android:bottomLeftRadius="0dp"/>
+
+
+
+
+
+
+
+
+
+</shape>

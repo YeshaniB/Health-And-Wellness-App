@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DiaMellitusApp</string>
+
+
+    <string-array name="Category">
+        <item></item>
+        <item>Medication</item>
+        <item>Diet Plan</item>
+        <item>Exercise</item>
+        <item>Doctor Meetup</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="add_your_task_here">Add Your Task Here</string>
+    <string name="select_category">Select Category</string>
+    <string name="task_description">Task Description</string>
+    <string name="enter_task_description">Enter task description</string>
+    <string name="due_date">Due Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="due_time">Due Time</string>
+    <string name="select_time">Select Time</string>
+    <string name="save">Save</string>
+    <string name="reminder">Set a Reminder</string>
+
+    <string name="timerTitle">Set Your Workout Timer</string>
+    <string name="time">00:00:00</string>
+    <string name="timeleft">Time Left</string>
+
+
+</resources>

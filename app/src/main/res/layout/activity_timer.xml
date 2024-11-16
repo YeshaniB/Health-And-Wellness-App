@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Timer">
+
+   <FrameLayout
+        android:id="@+id/flTimer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="0"
+            android:rotation="90"
+            android:background="@drawable/grey_progressbas_bg"
+            android:progressDrawable="@drawable/blue_progressbas_bg"/>
+
+
+       <LinearLayout
+           android:layout_width="300dp"
+           android:layout_height="300dp"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/timerleft"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/time"
+               android:textColor="@color/black"
+               android:textSize="30sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/timeleft"
+               android:textColor="@color/black"
+               android:textSize="28sp"
+               android:textStyle="bold" />
+       </LinearLayout>
+    </FrameLayout>
+
+
+    <!-- <TextView
+        android:id="@+id/Timertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="104dp"
+        android:gravity="center"
+        android:text="Set Your Workout Timer"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+    <TextView
+        android:id="@+id/textViewshape"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bottomshape"
+        android:paddingStart="0dp"
+        android:paddingTop="7dp"
+        android:text="   Set Your Workout Timer"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Icon 1 aligned to the start (left) of the navigation panel -->
+
+        <!-- Icon 2 aligned to the end (right) of the navigation panel -->
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="Navigation Panel"
+            android:src="@drawable/navigation_panel" />
+
+        <ImageView
+            android:id="@+id/Home"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Icon 1"
+            android:src="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/Addtask"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="176dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Icon 1"
+            android:src="@drawable/baseline_add_task_24" />
+
+        <ImageView
+            android:id="@+id/setTimer"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Icon 2"
+            android:src="@drawable/menu_alarm_icon" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Addtask"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="104dp"
+            android:layout_marginBottom="161dp"
+            android:background="@drawable/startbtn_bg"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <ImageButton
+            android:id="@+id/addtimer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/Home"
+            android:layout_marginEnd="154dp"
+            android:layout_marginBottom="291dp"
+            android:layout_toStartOf="@+id/resetTimer"
+            android:background="@null"
+            android:contentDescription="Add Timer"
+            android:scaleType="fitXY"
+            android:src="@drawable/addtime"
+            app:layout_constraintBottom_toTopOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/resetTimer"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_above="@+id/setTimer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="291dp"
+            android:background="@null"
+            android:contentDescription="Reset Timer"
+            android:scaleType="fitXY"
+            android:src="@drawable/resetnn" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

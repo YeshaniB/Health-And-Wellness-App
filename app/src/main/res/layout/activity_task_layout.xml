@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <!-- CheckBox aligned to the upper left corner -->
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tool:text="" />
+
+        <!-- TextView for Task Category aligned to the right of the CheckBox -->
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/checkbox1"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for Task Description below Category TextView -->
+
+        <!-- TextView for Due Date below Task Description -->
+
+        <!-- TextView for Due Time below Due Date -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewCategory"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/checkbox1"
+            android:text="Task Description"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDescription"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="16dp"
+            android:text="Due Date: 12/12/2024"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDate"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="16dp"
+            android:text="Due Time: 10:00 AM"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <!-- FloatingActionButton for Update, aligned to the right bottom corner -->
+
+        <!-- FloatingActionButton for Delete, positioned above the Update FAB -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+
+            android:backgroundTint="@color/border"
+            android:contentDescription="Update Task"
+            android:src="@drawable/baseline_update" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/border"
+            android:contentDescription="Delete Task"
+            android:src="@drawable/baseline_delete" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/cancel_alarmicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="140dp"
+            android:backgroundTint="@color/border"
+            android:contentDescription="Cancel Alarm"
+            app:srcCompat="@drawable/baseline_stopalarm" />
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/cancelalarmicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="210dp"
+            android:backgroundTint="@color/border"
+            android:contentDescription="Cancel Alarm"
+            app:srcCompat="@drawable/baseline_stopalarm" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
